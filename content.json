@@ -509,5 +509,129 @@
         "If you follow a link to a filing office or provider, their terms and privacy information apply on that site. Direct contact is not enabled in this version. Review this page if a contact feature is added."
       ]
     ]
+  },
+  "blog": {
+    "title": "Renz Blog",
+    "intro": "Practical articles for forming a U.S. business, choosing providers, and staying organized after filing.",
+    "sections": []
+  },
+  "blog/compare-llc-formation-quotes": {
+    "title": "How to Compare LLC Formation Quotes",
+    "category": "LLC Formation",
+    "intro": "Compare what you’ll pay to start and what you’ll pay again next year before choosing a formation package.",
+    "sections": [
+      [
+        "Start with the same filing",
+        "Ask each provider for a quote for the same entity type and state. Request standard processing on each quote if speed is not a priority. This keeps expedited fees from distorting the comparison."
+      ],
+      [
+        "List government and provider charges separately",
+        [
+          "Record the state filing fee and optional expedite charge.",
+          "Record the provider preparation charge and what documents it includes.",
+          "Add the registered agent, mail forwarding or address service if you need them.",
+          "Check whether a quoted discount expires or requires an automatic renewal."
+        ]
+      ],
+      [
+        "Compare the second year as well",
+        "Write down every renewal separately, including any state annual report or tax that applies. A $100 lower setup quote can cost more over two years when the annual package is more expensive."
+      ],
+      [
+        "What to ask in writing",
+        "Try: “Please confirm the total due today, the total you expect me to pay again next year, which services renew automatically, and how I can cancel each one.” Save the reply alongside the quote."
+      ],
+      [
+        "Where to verify filing requirements",
+        "Use the [SBA business registration guide](https://www.sba.gov/business-guide/launch-your-business/register-your-business) and your state filing office for government requirements. For package terms, use the provider’s quote. [Open the Renz provider directory](providers/)."
+      ]
+    ]
+  },
+  "blog/registered-agent-checklist": {
+    "title": "What to Ask Before Choosing a Registered Agent",
+    "category": "Registered Agent",
+    "intro": "A practical checklist for state coverage, renewal costs, and delivery of official documents.",
+    "sections": [
+      [
+        "Confirm the appointment",
+        "Confirm that the provider covers the state where your entity is registered. Ask for the exact information your state form requires and check whether the filing fee for appointing or changing the agent is included."
+      ],
+      [
+        "Test the document workflow",
+        [
+          "Ask how soon documents typically appear after receipt.",
+          "Check whether notifications can go to more than one authorized person.",
+          "Ask what mail the provider accepts and what it costs to forward physical documents.",
+          "Confirm how to access previous documents if you move to another provider."
+        ]
+      ],
+      [
+        "Check renewal and optional services",
+        "Ask when the agent subscription renews and what it costs. If you also need a business mailing address, ask for a separate quote and check the permitted uses of that address."
+      ],
+      [
+        "If you already have an agent",
+        "Ask the new provider how to coordinate the change and when the appointment takes effect. Check the state’s filing instructions, then keep confirmation of the change with your business records."
+      ],
+      [
+        "Official starting point",
+        "See the [SBA registration guide](https://www.sba.gov/business-guide/launch-your-business/register-your-business) for the role of a registered agent. [Read the Renz registered agent guide](services/registered-agent/)."
+      ]
+    ]
+  },
+  "blog/ein-application-options": {
+    "title": "EIN Options for U.S. and International Applicants",
+    "category": "EIN",
+    "intro": "Find the official IRS application route and gather the information needed before you apply.",
+    "sections": [
+      [
+        "Start with the IRS eligibility guidance",
+        "The IRS’s online application is for eligible applicants whose principal business is in the United States or a U.S. territory. The IRS also publishes a separate path for applicants whose principal place of business is outside the United States. Check the current instructions before you begin."
+      ],
+      [
+        "Prepare your information",
+        [
+          "Use the name shown on the accepted formation document.",
+          "Confirm your entity type, mailing address, and reason for applying.",
+          "Identify the responsible party and use the current Form SS-4 instructions if your route calls for the form.",
+          "Keep your IRS confirmation with the state filing."
+        ]
+      ],
+      [
+        "When paying for help",
+        "There is no IRS charge to issue an EIN. If a provider charges to help with your application, ask what it will prepare, whether you will need to sign an authorization, and how it will send you the confirmation."
+      ],
+      [
+        "Official IRS links",
+        "Read the [IRS EIN application options](https://www.irs.gov/businesses/employer-identification-number) and [Form SS-4 instructions](https://www.irs.gov/instructions/iss4). [See the Renz EIN guide](services/ein-assistance/)."
+      ]
+    ]
+  },
+  "blog/after-llc-formation": {
+    "title": "What to Do After Your LLC Is Formed",
+    "category": "After Formation",
+    "intro": "A starting checklist for company records, renewals, and official filings after the state accepts your LLC.",
+    "sections": [
+      [
+        "Make a company records folder",
+        "Save the accepted state filing, receipt, agent details, operating agreement if applicable, and EIN confirmation if issued. Verify the legal name and spelling across the documents before using them for another application."
+      ],
+      [
+        "Build a calendar before renewals arrive",
+        [
+          "Find and note the state reporting or tax deadlines that apply to your entity.",
+          "Record the registered agent renewal date and any address-service subscriptions.",
+          "Check whether your business activity requires city, county or state licenses and when they renew."
+        ]
+      ],
+      [
+        "Verify deadlines in the right place",
+        "Rules differ by state and entity type. Start with the [Wyoming Secretary of State FAQ](https://sos.wyo.gov/FAQS.aspx?root=BUS), the [Delaware Division of Corporations FAQ](https://corp.delaware.gov/faqs/) or the [Texas Comptroller franchise tax page](https://comptroller.texas.gov/taxes/franchise/) as relevant to your company."
+      ],
+      [
+        "If you operate in another state",
+        "Check whether the state where you operate requires a separate registration. The [SBA registration guide](https://www.sba.gov/business-guide/launch-your-business/register-your-business) outlines how to look up foreign qualification. [Browse the Renz state guides](states/)."
+      ]
+    ]
   }
 }

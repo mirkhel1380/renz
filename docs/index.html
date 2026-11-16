@@ -6,15 +6,18 @@
   <meta name="theme-color" content="#14243e">
   <title>Renz | U.S. Business Setup & Formation Services</title>
   <link rel="icon" href="./mark.svg" type="image/svg+xml"><link rel="stylesheet" href="./styles.css">
-  <script src="./directory.js" defer></script><script src="./app.js" defer></script>
+  <script src="./navigation.js" defer></script><script src="./directory.js" defer></script><script src="./app.js" defer></script>
 </head>
 <body>
   <a class="skip" href="#main">Skip to content</a>
-  <header class="site-header"><div class="container navigation">
-    <a class="brand" href="./" aria-label="Renz home"><img src="./mark.svg" alt="" width="32" height="32">Renz</a>
-    <nav aria-label="Main navigation"><a href="./services/">Services</a><a href="./states/">States</a><a href="./providers/">Providers</a><a href="./resources/">Resources</a></nav>
-    <a class="button header-action" href="#setup">Build a Checklist <span aria-hidden="true">→</span></a>
-  </div></header>
+  <header class="site-header" data-site-header><div class="container navigation">
+  <a class="brand" href="./" aria-label="Renz home"><img src="./mark.svg" alt="" width="36" height="36"><span>Renz</span></a>
+  <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="renz-navigation">
+    <span class="menu-icon" aria-hidden="true"></span><span>Menu</span>
+  </button>
+  <nav id="renz-navigation" class="main-nav" aria-label="Main navigation"><details name="renz-primary"><summary>Services</summary><div class="nav-panel"><a href="./services/">All Services</a><a href="./services/llc-formation/">LLC Formation</a><a href="./services/registered-agent/">Registered Agent</a><a href="./services/ein-assistance/">EIN Assistance</a></div></details><details name="renz-primary"><summary>States</summary><div class="nav-panel"><a href="./states/">All 50 States</a><a href="./states/wyoming/">Wyoming</a><a href="./states/delaware/">Delaware</a><a href="./states/texas/">Texas</a></div></details><details name="renz-primary"><summary>Providers</summary><div class="nav-panel"><a href="./providers/">Provider Directory</a><a href="./providers/#section-1">How to Compare</a><a href="./providers/#section-2">Questions to Ask</a></div></details><details name="renz-primary"><summary>Resources</summary><div class="nav-panel"><a href="./resources/">Resource Library</a><a href="./how-it-works/">How It Works</a><a href="./contact/">Contact</a></div></details><a class="nav-link" href="./blog/">Blog</a></nav>
+  <a class="button header-action" href="./#setup">Build a Checklist <span aria-hidden="true">→</span></a>
+</div></header>
   <main id="main">
     <section class="hero"><div class="container hero-layout">
       <div class="hero-copy">
@@ -85,10 +88,17 @@
     </div>
   </main>
   <footer class="footer"><div class="container footer-layout">
-    <div><a class="brand" href="./" aria-label="Renz home"><img src="./mark.svg" alt="" width="32" height="32">Renz</a><p>U.S. business setup and provider guidance.</p></div>
-    <nav aria-label="Footer services"><a href="./services/">Services</a><a href="./states/">States</a><a href="./providers/">Providers</a><a href="./resources/">Resources</a></nav>
-    <nav aria-label="About Renz"><a href="./about/">About</a><a href="./contact/">Contact</a><a href="./privacy/">Privacy</a></nav>
-  </div></footer>
+  <div class="footer-intro"><a class="brand" href="./" aria-label="Renz home"><img src="./mark.svg" alt="" width="36" height="36"><span>Renz</span></a>
+    <p>Renz helps founders plan U.S. company formation, compare registered agents, and prepare for EIN applications.</p>
+  </div>
+  <div class="footer-company"><h2>About &amp; Support</h2>
+    <nav aria-label="About Renz"><a href="./about/">About</a><a href="./contact/">Contact</a><a href="./privacy/">Privacy</a><a href="./blog/">Blog</a></nav>
+  </div>
+  <div class="footer-start"><h2>Ready to get started?</h2>
+    <p>Choose a state and service to see your next steps.</p>
+    <a href="./#setup">Build a Checklist <span aria-hidden="true">→</span></a>
+  </div>
+</div></footer>
   <dialog id="dialog" aria-labelledby="dialog-title"><div class="dialog-head"><h2 id="dialog-title"></h2><form method="dialog"><button class="close" aria-label="Close">×</button></form></div><div id="dialog-content"></div></dialog>
 </body>
 </html>
