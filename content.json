@@ -306,26 +306,6 @@
     "intro": "A starting list for researching providers. Check eligibility, package details, and current prices directly before ordering.",
     "sections": [
       [
-        "Northwest Registered Agent",
-        "Explore its [LLC formation services](https://www.northwestregisteredagent.com/llc). Ask which address and agent services are included and when they renew."
-      ],
-      [
-        "Inc Authority",
-        "Explore [formation services](https://www.incauthority.com/). Confirm state fees, optional add-ons, and the registered agent renewal price."
-      ],
-      [
-        "CorpNet",
-        "Explore [formation and compliance services](https://www.corpnet.com/). Ask which filings can be bundled and what ongoing support costs."
-      ],
-      [
-        "LLC Attorney",
-        "Explore [formation and registered agent services](https://llcattorney.com/). Confirm which package features, address services, and support are included."
-      ],
-      [
-        "doola",
-        "Explore [services for U.S. and international founders](https://www.doola.com/). Ask about country eligibility, plan inclusions, annual costs, and cancellation terms."
-      ],
-      [
         "How to compare",
         "Record the initial service price, state fees, renewal rate, state coverage, and eligibility in the same order for each provider. Use the official links above for the latest details."
       ],
@@ -346,6 +326,32 @@
         "Provider listing policy",
         "The directory links to provider-operated websites. The order of the cards is a directory order. Check eligibility, refund terms, and scope directly with the provider before ordering."
       ]
+    ],
+    "companies": [
+      {
+        "name": "Northwest Registered Agent",
+        "url": "https://www.northwestregisteredagent.com/llc",
+        "logo": "northwest.svg",
+        "note": "Ask which address and registered agent services are included and when they renew."
+      },
+      {
+        "name": "Inc Authority",
+        "url": "https://www.incauthority.com/",
+        "logo": "inc-authority.png",
+        "note": "Confirm state fees, optional add-ons, and the registered agent renewal price."
+      },
+      {
+        "name": "Registered Agents Inc.",
+        "url": "https://www.registeredagentsinc.com/",
+        "logo": "registered-agents-inc.webp",
+        "note": "Check registered agent coverage for your state, renewal terms, and how official documents are delivered."
+      },
+      {
+        "name": "LLC Attorney",
+        "url": "https://llcattorney.com/",
+        "logo": "llc-attorney.png",
+        "note": "Confirm which package features, address services, and support are included."
+      }
     ]
   },
   "how-it-works": {

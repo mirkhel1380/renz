@@ -88,14 +88,21 @@ def layout(slug, entry, prefix):
         return hub_cards(STATE_LINKS, prefix) + directory + "".join(section(item, prefix, index) for index, item in enumerate(sections[2:], 3))
     if mode == "providers":
         cards = []
-        for title, description in sections[:5]:
-            match = LINK.search(description)
-            body = description[match.end():].strip().lstrip(".").strip()
-            href = escape(match.group(2), quote=True)
-            mark = "".join(part[0] for part in title.split())[:2].upper()
-            cards.append(f'''<article class="provider-card"><span class="provider-mark" aria-hidden="true">{escape(mark)}</span>
-              <h2>{escape(title)}</h2><p>{escape(body)}</p><a class="card-link" href="{href}">Visit provider <span aria-hidden="true">→</span></a></article>''')
-        return '<div class="provider-grid">' + ''.join(cards) + '</div>' + "".join(section(item, prefix, index) for index, item in enumerate(sections[5:], 6))
+        for provider in entry["companies"]:
+            title = escape(provider["name"])
+            note = escape(provider["note"])
+            href = escape(provider["url"], quote=True)
+            logo = escape(provider["logo"], quote=True)
+            cards.append(f'''<article class="provider-card">
+              <div class="provider-heading">
+                <span class="provider-logo"><img src="{prefix}assets/providers/{logo}" alt="" width="140" height="44" decoding="async"></span>
+                <h2>{title}</h2>
+              </div>
+              <p>{note}</p>
+              <a class="card-link" href="{href}">Visit provider <span aria-hidden="true">→</span></a>
+            </article>''')
+        guidance = "".join(section(item, prefix, index) for index, item in enumerate(sections, 1))
+        return '<div class="provider-grid">' + "".join(cards) + "</div>" + guidance
     if mode in {"process", "resources", "info"}:
         return f'<div class="content-grid {mode}-grid">' + "".join(
             section(item, prefix, index, "content-card") for index, item in enumerate(sections, 1)
@@ -129,7 +136,7 @@ def page(slug, entry):
 <meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
 <title>{title} | Renz</title><meta name="description" content="{intro}">
 <meta name="theme-color" content="#14243e">
-<link rel="stylesheet" href="{prefix}styles.css"><link rel="icon" href="{prefix}favicon.svg" type="image/svg+xml">
+<link rel="stylesheet" href="{prefix}styles.css"><link rel="icon" href="{prefix}mark.svg" type="image/svg+xml">
 {extra_script}</head><body>
 <a class="skip" href="#main">Skip to content</a>
 <header class="site-header"><div class="container navigation">{brand}

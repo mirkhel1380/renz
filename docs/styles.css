@@ -75,7 +75,7 @@ select, input[type="search"] { width: 100%; min-height: 46px; padding: 8px 12px;
 .service, .provider-card, .content-card { display: flex; flex-direction: column; align-items: flex-start; color: var(--ink); border: 1px solid var(--line); background: #fff; border-radius: 16px; padding: clamp(20px, 2.5vw, 30px); text-decoration: none; min-width: 0; }
 .service { box-shadow: 0 7px 23px #14243e08; transition: box-shadow .2s, border-color .2s, transform .2s; }
 .service:hover { transform: translateY(-4px); box-shadow: 0 12px 24px #10214012; border-color: #94ace5; }
-.service-icon, .state-code, .provider-mark { display: grid; place-items: center; min-width: 40px; min-height: 40px; padding: 2px 6px; border-radius: 9px; background: var(--wash); color: var(--blue); font-weight: 750; }
+.service-icon, .state-code { display: grid; place-items: center; min-width: 40px; min-height: 40px; padding: 2px 6px; border-radius: 9px; background: var(--wash); color: var(--blue); font-weight: 750; }
 .service-icon { margin-bottom: 20px; font-size: 25px; }
 .service p, .provider-card p, .content-card p, .content-card ul, .article-section p, .article-section ul { color: var(--muted); line-height: 1.68; }
 .service p, .provider-card p { flex: 1; margin: 9px 0 21px; }
@@ -130,7 +130,14 @@ details p { color: var(--muted); line-height: 1.6; margin-bottom: 0; }
 .article-index nav a { font-size: 14px; }
 .provider-grid, .content-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
 .provider-card { background: #fff; box-shadow: 0 10px 26px #13203609; }
-.provider-mark { margin-bottom: 14px; width: 45px; }
+.provider-heading { display: flex; align-items: center; gap: 15px; width: 100%; min-width: 0; }
+.provider-heading h2 { min-width: 0; overflow-wrap: anywhere; }
+.provider-logo { display: grid; place-items: center; flex: 0 0 clamp(103px, 12vw, 146px); min-width: 0; min-height: 54px; padding: 7px; background: #fff; border: 1px solid var(--line); border-radius: 8px; }
+.provider-logo img { display: block; width: 100%; height: 38px; object-fit: contain; }
+@media (max-width: 410px) {
+  .provider-heading { gap: 11px; }
+  .provider-heading h2 { font-size: 22px; }
+}
 .hub-cards, .provider-grid { margin-bottom: 18px; }
 .content-card { background: #fff; box-shadow: 0 8px 22px #14243e08; }
 .process-grid { counter-reset: process; }
