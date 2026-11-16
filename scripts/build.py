@@ -123,7 +123,7 @@ def page(slug, entry):
         callout = (f'<section class="inner-callout"><div><h2>Plan your next step.</h2>'
                    f'<p>Build a checklist for the state and service you’re considering.</p></div>'
                    f'<a class="button light-button" href="{prefix}#setup">Build a Checklist <span aria-hidden="true">→</span></a></section>')
-    brand = f'<a class="brand" href="{prefix}" aria-label="Renz home"><img src="{prefix}mark.svg" alt="" width="32" height="30">Renz</a>'
+    brand = f'<a class="brand" href="{prefix}" aria-label="Renz home"><img src="{prefix}mark.svg" alt="" width="32" height="32">Renz</a>'
     return f"""<!doctype html>
 <html lang="en"><head>
 <meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
