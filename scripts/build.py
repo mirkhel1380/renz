@@ -70,7 +70,7 @@ def section(item, prefix, index, class_name="article-section"):
 def hub_cards(entries, prefix):
     return '<div class="services hub-cards">' + "".join(
         f'<a class="service" href="{prefix}{url}"><span class="service-icon" aria-hidden="true">{escape(icon)}</span>'
-        f'<h2>{escape(title)}</h2><p>{escape(summary)}</p><span class="card-link">View details <span aria-hidden="true">↗</span></span></a>'
+        f'<h2>{escape(title)}</h2><p>{escape(summary)}</p><span class="card-link">View details <span aria-hidden="true">→</span></span></a>'
         for title, summary, url, icon in entries
     ) + '</div>'
 
@@ -94,7 +94,7 @@ def layout(slug, entry, prefix):
             href = escape(match.group(2), quote=True)
             mark = "".join(part[0] for part in title.split())[:2].upper()
             cards.append(f'''<article class="provider-card"><span class="provider-mark" aria-hidden="true">{escape(mark)}</span>
-              <h2>{escape(title)}</h2><p>{escape(body)}</p><a class="card-link" href="{href}">Visit provider <span aria-hidden="true">↗</span></a></article>''')
+              <h2>{escape(title)}</h2><p>{escape(body)}</p><a class="card-link" href="{href}">Visit provider <span aria-hidden="true">→</span></a></article>''')
         return '<div class="provider-grid">' + ''.join(cards) + '</div>' + section(sections[-1], prefix, 6)
     if mode in {"process", "resources", "info"}:
         return f'<div class="content-grid {mode}-grid">' + "".join(
@@ -104,7 +104,7 @@ def layout(slug, entry, prefix):
     index_links = "".join(f'<a href="#section-{index}">{escape(item[0])}</a>' for index, item in enumerate(sections, 1))
     body = "".join(section(item, prefix, index) for index, item in enumerate(sections, 1))
     index = (f'<aside class="article-index"><h2>On this page</h2><nav aria-label="On this page">{index_links}</nav>'
-             f'<a class="button" href="{prefix}#setup">Build a Checklist <span aria-hidden="true">↗</span></a></aside>')
+             f'<a class="button" href="{prefix}#setup">Build a Checklist <span aria-hidden="true">→</span></a></aside>')
     return '<div class="detail-layout"><div class="article-main">' + body + "</div>" + index + "</div>"
 
 
@@ -122,7 +122,7 @@ def page(slug, entry):
     if slug != "privacy" and "/" not in slug:
         callout = (f'<section class="inner-callout"><div><h2>Plan your next step.</h2>'
                    f'<p>Build a checklist for the state and service you’re considering.</p></div>'
-                   f'<a class="button light-button" href="{prefix}#setup">Build a Checklist <span aria-hidden="true">↗</span></a></section>')
+                   f'<a class="button light-button" href="{prefix}#setup">Build a Checklist <span aria-hidden="true">→</span></a></section>')
     brand = f'<a class="brand" href="{prefix}" aria-label="Renz home"><img src="{prefix}mark.svg" alt="" width="32" height="30">Renz</a>'
     return f"""<!doctype html>
 <html lang="en"><head>
@@ -134,7 +134,7 @@ def page(slug, entry):
 <a class="skip" href="#main">Skip to content</a>
 <header class="site-header"><div class="container navigation">{brand}
 <nav aria-label="Main navigation">{nav}</nav>
-<a class="button header-action" href="{prefix}#setup">Build a Checklist <span aria-hidden="true">↗</span></a></div></header>
+<a class="button header-action" href="{prefix}#setup">Build a Checklist <span aria-hidden="true">→</span></a></div></header>
 <main id="main"><div class="article-hero"><div class="container">
 <nav class="breadcrumb" aria-label="Breadcrumb"><a href="{prefix}">Home</a>{parent}</nav>
 <h1>{title}</h1><p>{intro}</p></div></div>
