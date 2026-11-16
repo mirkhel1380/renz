@@ -1,0 +1,123 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Explore U.S. business formation, registered agent services and EIN assistance. Choose a state and plan your next step with Renz.">
+  <meta name="theme-color" content="#14243e">
+  <title>Renz | U.S. Business Setup</title>
+  <link rel="icon" href="./mark.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="./styles.css">
+  <script src="./app.js" defer></script>
+</head>
+<body>
+  <a class="skip" href="#main">Skip to content</a>
+  <header class="site-header">
+    <div class="container navigation">
+      <a class="brand" href="./" aria-label="Renz home"><img src="./mark.svg" alt="" width="32" height="30">Renz</a>
+      <nav aria-label="Main navigation">
+        <a href="./services/">Services</a><a href="./states/">States</a><a href="./how-it-works/">How It Works</a><a href="./resources/">Resources</a><a href="./providers/">Providers</a>
+      </nav>
+      <a class="button header-action" href="#setup">Request Advice</a>
+    </div>
+  </header>
+  <main id="main">
+    <section class="hero">
+      <div class="container hero-layout">
+        <div class="hero-copy">
+          <h1>Set up your business in the U.S.</h1>
+          <p>Find help with company formation, registered agent services, and EIN applications.</p>
+          <a class="button" href="./services/">Explore Services <span aria-hidden="true">→</span></a>
+        </div>
+        <form class="setup" id="setup">
+          <h2>Get setup advice</h2><p class="setup-intro">Build a checklist for your state and service.</p>
+          <label for="state">Formation state</label>
+          <select id="state" name="state" required>
+            <option value="">Select a state</option>
+            <option value="Undecided">I haven’t decided yet</option>
+          </select>
+          <label for="service">Service</label>
+          <select id="service" name="service" required>
+            <option value="">Select a service</option>
+            <option value="formation">LLC Formation</option>
+            <option value="agent">Registered Agent</option>
+            <option value="ein">EIN Assistance</option>
+            <option value="unsure">Help me choose</option>
+          </select>
+          <button class="button" type="submit">Continue <span aria-hidden="true">→</span></button>
+        </form>
+      </div>
+    </section>
+    <div class="container">
+      <section class="section" id="services" aria-labelledby="services-title">
+        <h2 id="services-title">Business Setup Services</h2>
+        <div class="services">
+          <a class="service" href="./services/llc-formation/">
+            <span class="service-icon" aria-hidden="true">◇</span>
+            <span class="service-title">LLC Formation</span>
+            <span class="service-copy">Get help preparing and filing.</span>
+            <span class="arrow" aria-hidden="true">→</span>
+          </a>
+          <a class="service" href="./services/registered-agent/">
+            <span class="service-icon" aria-hidden="true">◎</span>
+            <span class="service-title">Registered Agent</span>
+            <span class="service-copy">Find a provider in your state.</span>
+            <span class="arrow" aria-hidden="true">→</span>
+          </a>
+          <a class="service" href="./services/ein-assistance/">
+            <span class="service-icon" aria-hidden="true">▤</span>
+            <span class="service-title">EIN Assistance</span>
+            <span class="service-copy">Get help with your application.</span>
+            <span class="arrow" aria-hidden="true">→</span>
+          </a>
+        </div>
+      </section>
+      <section class="section separated" id="states" aria-labelledby="states-title">
+        <h2 id="states-title">Browse by State</h2>
+        <div class="state-links">
+          <a class="state-guide-link" href="./states/wyoming/">Wyoming</a>
+          <a class="state-guide-link" href="./states/delaware/">Delaware</a>
+          <a class="state-guide-link" href="./states/texas/">Texas</a>
+          <button class="text-button" type="button" id="all-states">Choose from all 50 states</button>
+        </div>
+      </section>
+      
+      <section class="section separated provider-intro" aria-labelledby="provider-title">
+        <div><h2 id="provider-title">Compare Formation Providers</h2><p>Review the setup charge, state fees, registered agent renewal and eligibility before you pay.</p></div>
+        <a class="button outline" href="./providers/">Browse Providers <span aria-hidden="true">→</span></a>
+      </section>
+      <section class="section separated" id="how-it-works">
+        <h2>How It Works</h2>
+        <ol class="steps">
+          <li><strong>Choose your state</strong><span>Start with the state where you plan to form your business, or select “I haven’t decided yet.”</span></li>
+          <li><strong>Pick a service</strong><span>Tell us whether your next step is forming an LLC, finding an agent, or applying for an EIN.</span></li>
+          <li><strong>Review your next steps</strong><span>See a checklist for your selection before you prepare an application or choose a provider.</span></li>
+        </ol>
+        <a class="more" href="./how-it-works/">See the full process →</a>
+      </section>
+      <section class="section separated" id="resources">
+        <h2>Before You Apply</h2>
+        <div class="resource-links">
+          <details><summary>What should I have ready for LLC formation?</summary><p>Start with a proposed business name, a formation state, and your registered agent details. Check the state’s official filing instructions before submitting.</p></details>
+          <details><summary>What should I compare when choosing an agent?</summary><p>Ask about state coverage, the renewal price, how official documents are delivered, and which add-ons cost extra.</p></details>
+          <details><summary>Where can I read the official EIN instructions?</summary><p>Use the <a href="https://www.irs.gov/businesses/employer-identification-number">IRS guide to Employer Identification Numbers</a> to check the application options for your situation.</p></details>
+        </div>
+        <a class="more" href="./resources/">Explore setup resources →</a>
+      </section>
+      <section class="callout" id="contact">
+        <h2>Need help choosing a service?</h2><a class="button pale" href="#setup">Request Advice <span aria-hidden="true">→</span></a>
+      </section>
+    </div>
+  </main>
+  <footer class="footer">
+    <div class="container footer-inner">
+      <a class="brand" href="./" aria-label="Renz home"><img src="./mark.svg" alt="" width="28" height="26">Renz</a>
+      <nav aria-label="Footer navigation"><a href="./about/">About</a><a href="./contact/">Contact</a><a href="./privacy/">Privacy</a></nav>
+    </div>
+  </footer>
+  <dialog id="dialog" aria-labelledby="dialog-title">
+    <div class="dialog-head"><h2 id="dialog-title"></h2><form method="dialog"><button class="close" aria-label="Close">×</button></form></div>
+    <div id="dialog-content"></div>
+  </dialog>
+</body>
+</html>
