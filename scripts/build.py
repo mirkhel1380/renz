@@ -79,23 +79,23 @@ def layout(slug, entry, prefix):
     sections = entry["sections"]
     mode = LAYOUTS.get(slug, "detail")
     if mode == "overview":
-        return hub_cards(SERVICE_LINKS, prefix) + section(sections[-1], prefix, 4)
+        return hub_cards(SERVICE_LINKS, prefix) + "".join(section(item, prefix, index) for index, item in enumerate(sections[3:], 4))
     if mode == "states":
         directory = f'''<section class="directory" data-state-directory data-home="{prefix}"><div class="section-head"><div>
           <h2>Find your state</h2><p>Choose any state to prefill your setup checklist.</p></div>
           <label for="state-search">Search by state<input id="state-search" type="search" placeholder="e.g. Wyoming"></label></div>
           <ul class="directory-grid"></ul><p role="status" class="search-status"></p></section>'''
-        return hub_cards(STATE_LINKS, prefix) + directory + section(sections[-1], prefix, 3)
+        return hub_cards(STATE_LINKS, prefix) + directory + "".join(section(item, prefix, index) for index, item in enumerate(sections[2:], 3))
     if mode == "providers":
         cards = []
-        for index, (title, description) in enumerate(sections[:-1], 1):
+        for title, description in sections[:5]:
             match = LINK.search(description)
             body = description[match.end():].strip().lstrip(".").strip()
             href = escape(match.group(2), quote=True)
             mark = "".join(part[0] for part in title.split())[:2].upper()
             cards.append(f'''<article class="provider-card"><span class="provider-mark" aria-hidden="true">{escape(mark)}</span>
               <h2>{escape(title)}</h2><p>{escape(body)}</p><a class="card-link" href="{href}">Visit provider <span aria-hidden="true">→</span></a></article>''')
-        return '<div class="provider-grid">' + ''.join(cards) + '</div>' + section(sections[-1], prefix, 6)
+        return '<div class="provider-grid">' + ''.join(cards) + '</div>' + "".join(section(item, prefix, index) for index, item in enumerate(sections[5:], 6))
     if mode in {"process", "resources", "info"}:
         return f'<div class="content-grid {mode}-grid">' + "".join(
             section(item, prefix, index, "content-card") for index, item in enumerate(sections, 1)
@@ -129,7 +129,7 @@ def page(slug, entry):
 <meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
 <title>{title} | Renz</title><meta name="description" content="{intro}">
 <meta name="theme-color" content="#14243e">
-<link rel="stylesheet" href="{prefix}styles.css"><link rel="icon" href="{prefix}mark.svg" type="image/svg+xml">
+<link rel="stylesheet" href="{prefix}styles.css"><link rel="icon" href="{prefix}favicon.svg" type="image/svg+xml">
 {extra_script}</head><body>
 <a class="skip" href="#main">Skip to content</a>
 <header class="site-header"><div class="container navigation">{brand}

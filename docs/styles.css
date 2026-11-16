@@ -188,3 +188,7 @@ dialog::backdrop { background: #0b1d40aa; }
   html { scroll-behavior: auto; }
   *, *::before, *::after { transition-duration: 0s !important; }
 }
+.next-steps { margin: 0; padding: 2px 18px; border: 1px solid var(--line); border-radius: 12px; background: #fff; list-style: none; }
+.next-steps li { padding: 13px 0; color: var(--muted); line-height: 1.6; border-bottom: 1px solid var(--line); }
+.next-steps li:last-child { border-bottom: 0; }
+.next-steps strong { color: var(--ink); }
