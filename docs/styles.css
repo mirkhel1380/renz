@@ -110,10 +110,10 @@ select, input[type="search"] { width: 100%; min-height: 46px; padding: 8px 12px;
 .steps li::before { counter-increment: step; content: counter(step, decimal-leading-zero); display: block; color: var(--blue); font-size: 12px; font-weight: 750; margin-bottom: 11px; }
 .steps strong { display: block; }
 .steps p { color: var(--muted); line-height: 1.55; margin: 8px 0 0; }
-details { padding: 15px 0; border-bottom: 1px solid var(--line); }
-details:first-child { border-top: 1px solid var(--line); }
-summary { cursor: pointer; font-weight: 700; }
-details p { color: var(--muted); line-height: 1.6; margin-bottom: 0; }
+.resource-links details { padding: 15px 0; border-bottom: 1px solid var(--line); }
+.resource-links details:first-child { border-top: 1px solid var(--line); }
+.resource-links summary { cursor: pointer; font-weight: 700; }
+.resource-links details p { color: var(--muted); line-height: 1.6; margin-bottom: 0; }
 .footer { border-top: 3px solid #3b82f6; background: linear-gradient(125deg, #101f3b, #142e52); color: #fff; }
 .footer .brand img { outline: 1px solid #6b91cd; border-radius: 9px; }
 .footer-layout { display: grid; grid-template-columns: 1.25fr .74fr 1fr; gap: clamp(22px, 5vw, 64px); padding-block: 38px; }
