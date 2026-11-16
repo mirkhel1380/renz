@@ -1,13 +1,3 @@
-const states = [
-  "Alabama", "Alaska", "Arizona", "Arkansas", "California", "Colorado", "Connecticut", "Delaware",
-  "Florida", "Georgia", "Hawaii", "Idaho", "Illinois", "Indiana", "Iowa", "Kansas", "Kentucky",
-  "Louisiana", "Maine", "Maryland", "Massachusetts", "Michigan", "Minnesota", "Mississippi", "Missouri",
-  "Montana", "Nebraska", "Nevada", "New Hampshire", "New Jersey", "New Mexico", "New York",
-  "North Carolina", "North Dakota", "Ohio", "Oklahoma", "Oregon", "Pennsylvania", "Rhode Island",
-  "South Carolina", "South Dakota", "Tennessee", "Texas", "Utah", "Vermont", "Virginia", "Washington",
-  "West Virginia", "Wisconsin", "Wyoming",
-];
-
 const services = {
   formation: {
     title: "LLC Formation",
@@ -54,7 +44,7 @@ const form = document.querySelector("#setup");
 const stateSelect = document.querySelector("#state");
 const serviceSelect = document.querySelector("#service");
 
-for (const state of states) stateSelect.add(new Option(state, state));
+for (const state of renzStates) stateSelect.add(new Option(state, state));
 
 function showDialog(heading) {
   title.textContent = heading;
@@ -70,24 +60,8 @@ function addText(tag, text, className) {
   return element;
 }
 
-function setState(state) {
-  stateSelect.value = state;
-  if (dialog.open) dialog.close();
-  serviceSelect.focus();
-}
-
-document.querySelector("#all-states").addEventListener("click", () => {
-  showDialog("Choose a formation state");
-  const list = addText("div", "", "state-grid");
-  for (const state of states) {
-    const button = document.createElement("button");
-    button.type = "button";
-    button.textContent = state;
-    button.addEventListener("click", () => setState(state));
-    list.append(button);
-  }
-  list.firstElementChild.focus();
-});
+const requestedState = new URLSearchParams(window.location.search).get("state");
+if (renzStates.includes(requestedState)) stateSelect.value = requestedState;
 
 form.addEventListener("submit", (event) => {
   event.preventDefault();
