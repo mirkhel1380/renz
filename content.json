@@ -433,27 +433,35 @@
   },
   "about": {
     "title": "About Renz",
-    "intro": "Renz helps founders organize their next steps for setting up a business in the United States.",
+    "intro": "Renz gives founders practical starting points for U.S. company formation, registered agent services and EIN preparation.",
     "sections": [
       [
-        "What you can explore",
-        "The site covers LLC formation, registered agents, and EIN applications. The [service pages](services/) describe what to prepare and which questions to ask."
-      ],
-      [
-        "How to use this information",
-        "Use the checklists as starting points. Check official forms and provider terms before filing or paying. For legal or tax advice about your specific business, speak with a qualified professional."
+        "What Renz covers",
+        "Renz focuses on U.S. business setup. The site brings together service explanations, questions to ask providers, state filing links, and checklists for common tasks. It is written for people planning a new company or handling a next step for an existing one."
       ],
       [
         "Who the guides are for",
-        "Renz is for people preparing to start a U.S. business or reviewing common next steps for an existing company. It covers formation, registered agent services and EIN preparation."
+        [
+          "First-time founders who want to understand how a formation quote is put together.",
+          "Owners comparing a registered agent’s renewal price and document delivery.",
+          "Founders outside the United States gathering questions about eligibility, documents and EIN application options."
+        ]
       ],
       [
-        "Where the information comes from",
-        "State and federal filing instructions are linked in the relevant guides. The [provider directory](providers/) links to company sites so visitors can confirm their latest package details directly."
+        "How we organize the information",
+        "State and federal agency pages support the sections about filing and application rules. Provider websites are linked alongside the directory cards so you can ask the provider to confirm pricing, eligibility, and what a package includes."
       ],
       [
-        "How to compare providers on Renz",
-        "Use the same criteria for each package: upfront costs, ongoing costs, state coverage, eligibility and what the provider delivers."
+        "How to use the provider directory",
+        "Compare upfront charges, renewal costs, state coverage, eligibility and what you will receive. The order in the directory is a listing order. Ask each provider the same questions and keep its latest written quote with your records."
+      ],
+      [
+        "What the checklist does",
+        "Pick a state and service and Renz will generate a short planning checklist in your browser. You can then open the relevant guide, consult the official filing office or contact a provider directly."
+      ],
+      [
+        "Keep reading",
+        "Start with the [Renz Blog](blog/) for practical examples and the [state directory](states/) for filing links. The [Contact page](contact/) explains how to prepare a setup question and where to direct it."
       ]
     ]
   },
@@ -486,27 +494,39 @@
   },
   "privacy": {
     "title": "Privacy",
-    "intro": "How the current Renz site uses selections made in the setup tool.",
+    "intro": "How Renz handles checklist choices, routine website requests, and visits to linked providers or government agencies.",
     "sections": [
       [
-        "Setup tool",
-        "Your service selection and the resulting checklist are processed in the current browser. The checklist does not send a message or save the selection in its own storage."
+        "Scope",
+        "This notice covers the Renz website, including the blog, service and state guides, provider directory, and setup checklist. A site reached through an external link has its own privacy practices."
       ],
       [
-        "External websites",
-        "Official agencies and providers linked from Renz operate under their own privacy terms. Review the destination before entering personal, payment, or company information."
+        "Information used by the checklist",
+        "The checklist uses the formation state and the service you choose to prepare a list in your current browser. The checklist does not submit those selections as a message or keep its own saved copy. Its fields do not request names, email addresses, tax numbers, documents, or payment details."
       ],
       [
-        "Information the checklist uses",
-        "The checklist takes a formation state and service choice. It does not ask for a name, email address, tax ID, passport number, payment details, or documents."
+        "State selections in page links",
+        "The state directory can include a state name in the URL so the checklist opens with that state selected. The requested URL can appear in browser history and ordinary hosting logs. The link does not carry a name or a personally identifying application number."
       ],
       [
-        "State directory links",
-        "Choosing a state from the state directory can put the state name in the page URL to prefill the checklist. That URL can appear in browser history and in ordinary hosting logs."
+        "Hosting and access",
+        "When a page is loaded, the hosting service may process routine request information, such as the requested URL, browser information and IP address, to deliver and protect the site. If a private preview asks you to sign in, the host manages that sign-in under its own terms. Renz’s checklist does not receive your password."
       ],
       [
-        "Third-party visits and future forms",
-        "If you follow a link to a filing office or provider, their terms and privacy information apply on that site. Direct contact is not enabled in this version. Review this page if a contact feature is added."
+        "Cookies and browser storage",
+        "The public-facing Renz pages and checklist do not set their own advertising cookies or save a checklist in browser storage. A host may use its own access or security technology, such as when signing in to an owner-only preview."
+      ],
+      [
+        "Links to other websites",
+        "The site includes links to formation providers and government agencies. Once you visit another site, check its privacy information before entering personal, company or payment details. Renz does not receive an application you submit on those sites through the provider directory."
+      ],
+      [
+        "Messages and sensitive documents",
+        "The current Contact page is informational and does not accept messages or file uploads. Do not put tax IDs, passports, payment information or official documents into links or use them as search terms on Renz."
+      ],
+      [
+        "Using the site and reading this notice",
+        "You can use the formation guides and blog without submitting a checklist. See the [Contact page](contact/) for other ways to find the right source for a question. Review this notice when a new feature changes how the site handles information."
       ]
     ]
   },
@@ -542,6 +562,18 @@
         "Try: “Please confirm the total due today, the total you expect me to pay again next year, which services renew automatically, and how I can cancel each one.” Save the reply alongside the quote."
       ],
       [
+        "Work through a two-year example",
+        "These figures illustrate the comparison and aren’t provider prices. Quote A: $190 to start and $220 in year two, for $410 total. Quote B: $250 to start and $120 in year two, for $370 total. Quote A starts $60 lower, but Quote B costs $40 less over two years. Compare the same services before deciding."
+      ],
+      [
+        "Read the terms behind the price",
+        [
+          "Ask whether the quote covers a registered agent for a full year or a shorter promotional period.",
+          "Check if the provider charges for an accepted copy of the state filing or for specific delivery methods.",
+          "Find out what happens to the provider fee and state fee if an application is withdrawn or rejected."
+        ]
+      ],
+      [
         "Where to verify filing requirements",
         "Use the [SBA business registration guide](https://www.sba.gov/business-guide/launch-your-business/register-your-business) and your state filing office for government requirements. For package terms, use the provider’s quote. [Open the Renz provider directory](providers/)."
       ]
@@ -574,6 +606,18 @@
         "Ask the new provider how to coordinate the change and when the appointment takes effect. Check the state’s filing instructions, then keep confirmation of the change with your business records."
       ],
       [
+        "Ask for a real example of the process",
+        "Give the provider a scenario: “If you receive a document with a response deadline on a Friday, how will you notify me and where will I find the document?” Ask how to add a backup contact and whether there is any additional cost."
+      ],
+      [
+        "Set reminders before you renew",
+        [
+          "Record both the state’s filing deadlines and the date the agent subscription renews.",
+          "Confirm how to change the account email if staff or ownership changes.",
+          "Keep a copy of the appointment confirmation and the cancellation terms outside the provider dashboard."
+        ]
+      ],
+      [
         "Official starting point",
         "See the [SBA registration guide](https://www.sba.gov/business-guide/launch-your-business/register-your-business) for the role of a registered agent. [Read the Renz registered agent guide](services/registered-agent/)."
       ]
@@ -600,6 +644,18 @@
       [
         "When paying for help",
         "There is no IRS charge to issue an EIN. If a provider charges to help with your application, ask what it will prepare, whether you will need to sign an authorization, and how it will send you the confirmation."
+      ],
+      [
+        "Common problems before you apply",
+        [
+          "Check your approved legal name against your formation document instead of copying the name from a draft order.",
+          "Check which application route the IRS directs you to based on the principal place of business and the responsible party’s information.",
+          "If an application is pending, use the IRS follow-up instructions before submitting again."
+        ]
+      ],
+      [
+        "Save and use the confirmation",
+        "Keep the IRS confirmation with the company’s formation records and limit access to the people who need it. If it is lost, consult the [IRS EIN confirmation guidance](https://www.irs.gov/businesses/employer-identification-number) for current options."
       ],
       [
         "Official IRS links",
@@ -629,8 +685,189 @@
         "Rules differ by state and entity type. Start with the [Wyoming Secretary of State FAQ](https://sos.wyo.gov/FAQS.aspx?root=BUS), the [Delaware Division of Corporations FAQ](https://corp.delaware.gov/faqs/) or the [Texas Comptroller franchise tax page](https://comptroller.texas.gov/taxes/franchise/) as relevant to your company."
       ],
       [
+        "Separate the tasks by owner",
+        [
+          "Put the registered agent's delivery contact and backup contact in writing.",
+          "Decide who monitors state renewal dates and who retains receipts and confirmations.",
+          "Give your tax preparer or accountant the company records they request through an appropriate channel."
+        ]
+      ],
+      [
+        "Create a recurring review",
+        "Review deadlines and provider renewal charges before the business’s anniversary month. If your address, agent or business activities have changed, check the state’s instructions and update the relevant records."
+      ],
+      [
         "If you operate in another state",
         "Check whether the state where you operate requires a separate registration. The [SBA registration guide](https://www.sba.gov/business-guide/launch-your-business/register-your-business) outlines how to look up foreign qualification. [Browse the Renz state guides](states/)."
+      ]
+    ]
+  },
+  "blog/choose-an-llc-state": {
+    "title": "How to Choose a State for Your LLC",
+    "category": "State Selection",
+    "intro": "Compare where you will operate, what state filings apply, and the total cost of maintaining your company.",
+    "sections": [
+      [
+        "Start where you will do business",
+        "List where the LLC will have an office, employees or regular operations. Ask the relevant filing offices how they apply their registration rules to your facts. Forming in one state may lead to a second registration in a state where the business operates."
+      ],
+      [
+        "Build a two-year comparison",
+        [
+          "List the filing fee and any optional expedited processing.",
+          "Add the registered agent price for each state where the business needs an agent.",
+          "Check likely annual reports, taxes or related charges with each state office.",
+          "Record any registration, record request or certificate fee associated with operating in another state."
+        ]
+      ],
+      [
+        "Apply it to a simple scenario",
+        "If you plan to run the business from Texas but are considering forming in Wyoming, check what it would take to operate in Texas before comparing quotes. Include both states’ requirements in your estimate if the business needs both registrations."
+      ],
+      [
+        "Use official sources",
+        "Read the [SBA business registration guide](https://www.sba.gov/business-guide/launch-your-business/register-your-business) and compare the [Wyoming](states/wyoming/), [Delaware](states/delaware/) and [Texas](states/texas/) starting guides."
+      ]
+    ]
+  },
+  "blog/llc-vs-corporation": {
+    "title": "LLC or Corporation? Questions to Ask Before Filing",
+    "category": "Business Structure",
+    "intro": "Compare how you plan to run the business, bring in owners, raise money, and manage recurring obligations.",
+    "sections": [
+      [
+        "Ownership and management",
+        "An LLC generally refers to its owners as members. A corporation issues shares to shareholders. Decide who will own the company, who will make day-to-day decisions, and how you will document changes in control."
+      ],
+      [
+        "Plans for investment",
+        "If you expect to raise outside capital, ask prospective investors and your adviser whether they have requirements for the structure. Compare those needs with the ownership arrangements you want today."
+      ],
+      [
+        "Separate state structure from federal tax treatment",
+        "Formation is a state-level process. Federal tax treatment depends on the entity and its elections. Check IRS guidance for the facts of your company before choosing a structure solely because you heard it is taxed a particular way."
+      ],
+      [
+        "Before asking a provider to file",
+        [
+          "List current and future owners and how you expect to split responsibilities.",
+          "Ask about what governance documents are included and which recurring filings apply.",
+          "Confirm the entity type on your order before paying."
+        ]
+      ],
+      [
+        "Official starting points",
+        "See the [SBA business structure guide](https://legacy.sba.gov/business-guide/launch-your-business/choose-business-structure) and the [IRS business structures overview](https://www.irs.gov/businesses/small-businesses-self-employed/business-structures)."
+      ]
+    ]
+  },
+  "blog/us-company-from-abroad": {
+    "title": "Starting a U.S. Company from Abroad",
+    "category": "International Founders",
+    "intro": "A pre-order checklist for non-U.S. residents comparing formation providers and related services.",
+    "sections": [
+      [
+        "Check service eligibility first",
+        "Give the provider your country of residence and ask whether it accepts applicants there. Request a written list of acceptable identification and address documents. Check what happens to your payment if verification is unsuccessful."
+      ],
+      [
+        "Keep addresses and roles clear",
+        "Ask which company addresses each filing or service needs and whether a registered agent package includes a separate mailing service. Confirm what kinds of mail can be accepted, scanned or forwarded."
+      ],
+      [
+        "Plan EIN, banking and payments separately",
+        "Read the [IRS application options](https://www.irs.gov/businesses/employer-identification-number) before ordering EIN assistance. Separately ask the bank or payment company you plan to use about its country, document and identity requirements before relying on that account for your business."
+      ],
+      [
+        "Ask about reporting before you form",
+        "A tax adviser familiar with U.S. cross-border businesses can help you determine which federal, state and home-country obligations apply. Share the proposed ownership, location and business activity when getting advice."
+      ],
+      [
+        "Checklist before paying",
+        [
+          "Ask the formation provider for a dated quote and confirm residence eligibility.",
+          "Check the official filing process and expected records.",
+          "Keep the formation, EIN and account-opening steps on separate checklists."
+        ]
+      ]
+    ]
+  },
+  "blog/annual-compliance-calendar": {
+    "title": "Build an Annual Compliance Calendar for Your LLC",
+    "category": "After Formation",
+    "intro": "Track state requirements, registered agent renewal, and related business deadlines in one place.",
+    "sections": [
+      [
+        "Start with the state’s rules",
+        "Check the state where you formed and any additional states where the LLC is registered. Identify which obligations are tied to a calendar date, which depend on the formation date, and which depend on your business circumstances."
+      ],
+      [
+        "See why deadlines differ",
+        "Wyoming generally ties its annual report to the first day of the anniversary month. Delaware lists June 1 as the deadline for its annual LLC tax and says LLCs do not file an annual report for that tax. Texas publishes franchise tax reporting guidance separately. Check the official links before adding deadlines to your calendar."
+      ],
+      [
+        "Record state charges and subscriptions separately",
+        [
+          "Keep one calendar entry per filing or renewal.",
+          "Record the agency or provider, what is due, and who is responsible.",
+          "Add a reminder ahead of each deadline and retain the receipt or confirmation.",
+          "Review the entries if you change agents, move or register in a second state."
+        ]
+      ],
+      [
+        "Official state resources",
+        "Use the [Wyoming Secretary of State FAQ](https://sos.wyo.gov/FAQS.aspx?root=BUS), [Delaware Division of Corporations FAQ](https://corp.delaware.gov/faqs/) and [Texas Comptroller franchise tax guidance](https://comptroller.texas.gov/taxes/franchise/) as applicable."
+      ]
+    ]
+  },
+  "site-map": {
+    "title": "Site Map",
+    "intro": "Find the service, state guide, or article you’re looking for.",
+    "sections": [
+      [
+        "Business services",
+        [
+          "[All services](services/)",
+          "[LLC formation](services/llc-formation/)",
+          "[Registered agent services](services/registered-agent/)",
+          "[EIN assistance](services/ein-assistance/)",
+          "[Provider directory](providers/)"
+        ]
+      ],
+      [
+        "States and setup guides",
+        [
+          "[All 50 states](states/)",
+          "[Wyoming](states/wyoming/)",
+          "[Delaware](states/delaware/)",
+          "[Texas](states/texas/)",
+          "[Business setup resources](resources/)",
+          "[Build a checklist](#setup)"
+        ]
+      ],
+      [
+        "Blog & insights",
+        [
+          "[Renz Blog](blog/)",
+          "[How to Compare LLC Formation Quotes](blog/compare-llc-formation-quotes/)",
+          "[What to Ask Before Choosing a Registered Agent](blog/registered-agent-checklist/)",
+          "[EIN Options for U.S. and International Applicants](blog/ein-application-options/)",
+          "[What to Do After Your LLC Is Formed](blog/after-llc-formation/)",
+          "[How to Choose a State for Your LLC](blog/choose-an-llc-state/)",
+          "[LLC or Corporation? Questions to Ask Before Filing](blog/llc-vs-corporation/)",
+          "[Starting a U.S. Company from Abroad](blog/us-company-from-abroad/)",
+          "[Build an Annual Compliance Calendar for Your LLC](blog/annual-compliance-calendar/)"
+        ]
+      ],
+      [
+        "About and support",
+        [
+          "[About Renz](about/)",
+          "[How it works](how-it-works/)",
+          "[Contact](contact/)",
+          "[Privacy policy](privacy/)",
+          "[Provider listing policy](providers/#section-4)"
+        ]
       ]
     ]
   }

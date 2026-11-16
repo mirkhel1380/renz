@@ -23,7 +23,21 @@ NAV = (
         ("Resource Library", "resources/"), ("How It Works", "how-it-works/"), ("Contact", "contact/"),
     )),
 )
-FOOT = (("About", "about/"), ("Contact", "contact/"), ("Privacy", "privacy/"))
+FOOT = (
+    ("Explore services", (
+        ("LLC formation", "services/llc-formation/"), ("Registered agent", "services/registered-agent/"),
+        ("EIN assistance", "services/ein-assistance/"), ("Setup checklist", "#setup"),
+    )),
+    ("Get to know us", (
+        ("About Renz", "about/"), ("Contact us", "contact/"), ("How it works", "how-it-works/"),
+        ("Blog & insights", "blog/"), ("FAQs", "#resources-title"),
+        ("Costs & renewals", "blog/compare-llc-formation-quotes/"),
+    )),
+    ("Transparency", (
+        ("Privacy policy", "privacy/"), ("Provider listing policy", "providers/#section-4"),
+        ("Site map", "site-map/"),
+    )),
+)
 LINK = re.compile(r"\[([^\]]+)\]\(([^)]+)\)")
 GROUPS = {"services": "Services", "states": "State Guides", "providers": "Providers", "resources": "Resources", "blog": "Blog"}
 LAYOUTS = {
@@ -36,6 +50,7 @@ LAYOUTS = {
     "about": "info",
     "contact": "info",
     "privacy": "info",
+    "site-map": "info",
 }
 SERVICE_LINKS = (
     ("LLC Formation", "Prepare the filing and compare what a formation package includes.", "services/llc-formation/", "◇"),
@@ -103,18 +118,12 @@ def site_header(prefix, slug=""):
 
 
 def site_footer(prefix, slug=""):
-    return f"""<footer class="footer"><div class="container footer-layout">
-  <div class="footer-intro">{brand(prefix)}
-    <p>Renz helps founders plan U.S. company formation, compare registered agents, and prepare for EIN applications.</p>
-  </div>
-  <div class="footer-company"><h2>About &amp; Support</h2>
-    <nav aria-label="About Renz">{links((*FOOT, ("Blog", "blog/")), prefix, slug + "/")}</nav>
-  </div>
-  <div class="footer-start"><h2>Ready to get started?</h2>
-    <p>Choose a state and service to see your next steps.</p>
-    <a href="{prefix}#setup">Build a Checklist <span aria-hidden="true">→</span></a>
-  </div>
-</div></footer>"""
+    columns = "".join(
+        f'<div class="footer-group"><h2 id="footer-group-{index}">{escape(title)}</h2>'
+        f'<nav aria-labelledby="footer-group-{index}">{links(entries, prefix, slug + "/")}</nav></div>'
+        for index, (title, entries) in enumerate(FOOT, 1)
+    )
+    return f'<footer class="footer"><div class="container footer-layout">{columns}</div></footer>'
 
 
 def render_block(block, prefix):
@@ -215,7 +224,7 @@ def page(slug, entry):
     callout = ""
     if slug.startswith("blog/"):
         callout = f'<p class="back-to-blog"><a class="text-link" href="{prefix}blog/">← All blog articles</a></p>'
-    if slug not in {"privacy", "blog"} and "/" not in slug:
+    if slug not in {"privacy", "blog", "site-map"} and "/" not in slug:
         callout = (f'<section class="inner-callout"><div><h2>Plan your next step.</h2>'
                    f'<p>Build a checklist for the state and service you’re considering.</p></div>'
                    f'<a class="button light-button" href="{prefix}#setup">Build a Checklist <span aria-hidden="true">→</span></a></section>')
